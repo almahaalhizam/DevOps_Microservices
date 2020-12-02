@@ -1,4 +1,4 @@
-[![almahaalhizam](https://circleci.com/gh/almahaalhizam/machine-learning-microservice.svg?style=svg)](https://github.com/almahaalhizam/ML-Microservices/tree/master)
+[![almahaalhizam](https://circleci.com/gh/almahaalhizam/DevOps_Microservices.svg?style=svg)](https://github.com/almahaalhizam/DevOps_Microservices/tree/master)
 
 ## Cloud DevOps ND - C4- Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
 
