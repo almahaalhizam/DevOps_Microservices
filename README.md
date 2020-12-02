@@ -28,10 +28,15 @@ All the commands used in this README file have been tested in a linux-based mach
       c- ./upload_docker.sh (run in docker).
       d- ./run_kubernetes.sh (run in kubernetes).
       
-     In order to run the app in Docker container, you will need to have a Docker account and installation. You can have a Docker account through here [create a free docker account](https://hub.docker.com/signup) .
-     The `Dockerfile` contains the instructions needed to containerize the `app.py` application. Firstly, run the `./run_docker.sh` script to be able to get Docker running locally from the docker image defined in `Dockerfile`. Then, in order to make it accessible to a Kubernets cluster, you will upload the recently built docker image to Docker hub by running the `upload_docker.sh`. After that, you will will need to install ([Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) to be able run the app in a local Kubernetes cluster through this script `run_kubernetes.sh`
-     To make a house predection, Docker and Kubernetes should be running, then you will run the `make_predections.sh` while the app is up. This script basically prepare the payload of a POST request with a json object that contains the concrete values (the input) of the features of the prediction model. The folder `output_txt_files` contains `docker_out.txt` and `kubernetes_out.txt` which are examples of outputs running the app in Docker and Kubernetes, respectively.
-     Lastly, the directory .circleci includes one configuration file named `config.yml`, which containes the required instructions to setup a continous integration pipeline to automate the process.
+  4) In order to run the app in Docker container, you will need to have a Docker account and installation. You can have a Docker account through here [create a free docker account](https://hub.docker.com/signup) .
+  
+  5) The `Dockerfile` contains the instructions needed to containerize the `app.py` application. Firstly, run the `./run_docker.sh` script to be able to get Docker running locally from the docker image defined in `Dockerfile`. Then, in order to make it accessible to a Kubernets cluster, you will upload the recently built docker image to Docker hub by running the `upload_docker.sh`. 
+  
+  6)After that, you will will need to install ([Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) to be able run the app in a local Kubernetes cluster through this script `run_kubernetes.sh`
+  
+  7) To make a house predection, Docker and Kubernetes should be running, then you will run the `make_predections.sh` while the app is up. This script basically prepare the payload of a POST request with a json object that contains the concrete values (the input) of the features of the prediction model. The folder `output_txt_files` contains `docker_out.txt` and `kubernetes_out.txt` which are examples of outputs running the app in Docker and Kubernetes, respectively.
+    
+  8) Lastly, the directory .circleci includes one configuration file named `config.yml`, which containes the required instructions to setup a continous integration pipeline to automate the process.
      
   
 
